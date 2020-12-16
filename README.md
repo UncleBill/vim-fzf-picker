@@ -1,6 +1,6 @@
 # vim-fzf-picker
 
-Use fzf natively in Vim.
+Use fzf **natively** in Vim.
 
 ![fzf-picker](https://user-images.githubusercontent.com/1141198/102230088-696da580-3f27-11eb-90df-c1c40e09025f.gif)
 
@@ -25,6 +25,11 @@ noremap <c-p> <Cmd>FzfPick<CR>
 ```viml
 Plug  'unclebill/vim-fzf-picker'
 ```
+
+## Alternatives
+
+- [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim)
+- [ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim/)
 
 ## License
 
