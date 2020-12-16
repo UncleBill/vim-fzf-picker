@@ -22,6 +22,8 @@ noremap <c-p> <Cmd>FzfPick<CR>
 
 ## How to install
 
+Have [fzf](https://github.com/junegunn/fzf) installed, then add this plugin to your `.vimrc`
+
 ```viml
 Plug  'unclebill/vim-fzf-picker'
 ```
