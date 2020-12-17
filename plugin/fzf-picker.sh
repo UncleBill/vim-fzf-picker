@@ -9,4 +9,7 @@ to_vim()
   printf "${PRE} [\"$*\"] ${POST}"
 }
 
-to_vim edit $(fzf)
+fzf_pick_file=$(fzf)
+if [[ $fzf_pick_file ]]; then
+  to_vim edit $fzf_pick_file
+fi

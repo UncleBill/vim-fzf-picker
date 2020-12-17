@@ -4,15 +4,16 @@ endif
 
 let g:loaded_fzf_picker = 1
 
-function! FzfPick_ShellExecute(bufnum, args)
+function! FzfPick_ShellExecute(bufnum, args) abort
   execute join(a:args, ' ')
 endfunction
 
 let s:cmd = expand('<sfile>:p:h') .. '/fzf-picker.sh'
 function! s:FzfPick() abort
-  let buf = term_start(s:cmd, {
-        \ "term_name": "FzfPick",
+  call term_start(s:cmd, {
+        \ "term_name": "FzfPicker",
         \ "term_finish": "close",
+        \ "term_kill": 1,
         \ "norestore": 1,
         \ "term_api": "FzfPick_",
         \ })
